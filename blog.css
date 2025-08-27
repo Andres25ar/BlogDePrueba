@@ -1,0 +1,18 @@
+.description{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:springgreen;
+}
+
+.subtitles{
+    font-family: fantasy;
+    background: aquamarine, ;
+}
+
+.image{
+    /* border: 5px, turquoise, dotted; */
+    width: 45%;
+    border-style: outset;
+    border-color:cornflowerblue;
+    border-width: 4px;
+    border-radius: 40px;
+}

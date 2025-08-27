@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- mandar a darsalta@gmail.com -->
+<head>
+    <title>Mi Blog De Noticias</title>
+    <link rel="stylesheet" href="blog.css"/>
+</head>
+<body>
+    <!-- Contenido principal aquí -->
+    <header>
+        <h1>Blog de noticias</h1>
+    </header>
+    <section>
+        <!-- noticia 1 -->
+        <article>
+            <h2 class="subtitles">River mató a un club</h2>
+            <h3>En Madrid, el mundo vio morir a un pequeño club que se creia grande</h3>
+            <img class="image" src="finalRiverCampeon.jpg"/>
+            <p class="description">
+                En la final de la Copa Libertadores 2018, River Plate y Boca Juniors disputaron un <br>
+                partido histórico en el estadio Santiago Bernabéu de Madrid. Tras un empate en la ida, <br>
+                el encuentro de vuelta fue intenso y emocionante. Boca se adelantó con un gol de Benedetto,<br> 
+                pero River igualó con un tanto de Pratto. En tiempo suplementario, goles de Juan Fernando <br>
+                Quintero y Gonzalo Martínez sellaron la victoria de River por 3-1, consagrándolo campeón en<br>
+                una final inolvidable para el fútbol sudamericano.
+            </p>
+            <a target = "_blank" href="https://youtu.be/F-A_ujDnMo4?si=u1kI1WPcRtjaxmhM">Vea el resumen aquí</a>
+        </article>
+        <!-- noticia 2 -->
+        <article>
+            <h2 class="subtitles">Noticia sobre IA y el problema en la comunicacion</h2>
+            <h3>Universidades y empresas de Nueva York lideran la lucha contra sesgos lingüísticos en IA</h3>
+            <img class="image" src="IANoticia.jpg"/>
+            <p class="description">
+                Desde Nueva York.- “El futuro de la IA será multilingüe o no será justo”, advirtió un ingeniero <br>
+                de datos salvadoreño que desarrolla tecnología en una startup de Manhattan. Esta afirmación, <br>
+                recogida por The New York Times, sintetiza el debate en una ciudad donde más de 2,4 millones de <br>
+                personas se comunican en español y se hablan más de 200 lenguas. En este entorno, la cuestión <br>
+                sobre quién tiene derecho a ser entendido por la tecnología adquiere un carácter urgente de <br>
+                equidad, representación y acceso.
+            </p>
+            <a target="_blank" href="https://www.infobae.com/estados-unidos/2025/08/20/universidades-y-empresas-de-nueva-york-lideran-la-lucha-contra-sesgos-linguisticos-en-ia/">Noticia completa aquí</a>
+        </article>
+        <!-- noticia 3 -->
+        <article>
+            <h2 class="subtitles">Noticion para los amantes de debian y kde plasma</h2>
+            <h3>Disponible Debian 13 ‘Trixie’ con Linux 6.12 LTS y KDE Plasma 6.3 con Wayland por defecto</h3>
+            <img class="image" src="Debian-13-Trixie.jpg"/>
+            <p class="description">
+                Tras la reciente salida de la tan esperada nueva version de debian linux, la 13 apodada 'Trixie', <br>
+                los linuxeros fanaticos de esta distro ya tienen disponible el escritorio de KDE Plasma 6.3 <br>
+                el cual viene con la sesión de Wayland por defecto y brinda multiples beneficios a los usuarios
+            </p>
+            <a target="_blank" href="https://www.muylinux.com/2025/08/11/debian-13-trixie/">Enterate mas aquí</a>
+        </article>
+        <!-- noticia 4 -->
+        <article>
+            <h2 class="subtitles">Así estará el clima en Salta</h2>
+            <h3>El pronostico de toda la semana en la ciudad y toda la provincia de Salta</h3>
+            <img class="image" src="nubes.jpg"/>
+            <p class="description">
+                Descubre que depara en la semana el clima segun  el servicio meteorologico nacional <br>
+                para toda la provincia...  Que no te tome por sorpresa
+            </p>
+            <a target="_blank" href="https://www.lanacion.com.ar/clima/salta/">Saber más del clima aquí</a>
+        </article>
+        <!-- noticia 5 -->
+        <article>
+            <h2 class="subtitles">Joven realiza un incrible efecto dominó</h2>
+            <h3>Un joven programador Salteño causa sesacion en las redes al publicar un video viral</h3>
+            <video class="image" src="quinteros-gol.mp4" autoplay loop muted playsinline controlslist="nodownload nofullscreen noremoteplayback" disablePictureInPicture></video>
+            <p class="description">
+                El video de este salteño causa furor en las redes y hasta el mismo Messi lo ha compartido.<br>
+                Miralo hasta el final, no te lo podes perder.
+            </p>
+            <a target="_blank" href="https://www.lanacion.com.ar/clima/salta/">Saber más del clima aquí</a>
+        </article>
+    </section>
+    <hr>
+    <footer>
+        <h3>Desea contactarse con el editor?</h3>
+        <form action="https://formspree.io/f/meolqvga" method="post" onsubmit="return document.getElementById('terms').checked;">
+            <label for="name">Nombre y apellido:</label>
+            <input id="name" name="name" type="text" placeholder="Su nombre y apellido"/>
+            <br>
+            <label for="email">Correo electronico:</label>
+            <input id="email" name="email" type="email" placeholder="suemail@correo.com"/>
+            <br>
+            <label for="email_subject">Asunto:</label>
+            <input id="email_subject" name="email_subject" type="text" placeholder="Asunto del email"/>
+            <br>
+            <label for="message">Su mensaje:</label>
+            <textarea rows="8" cols="25" id="message" name="message" type="text" placeholder="Su comentario"></textarea>
+            <br>
+            <label>
+            <input type="checkbox" id="terms"/>
+            Acepta los <a target="_blank" href="https://www.argentina.gob.ar/terminos-y-condiciones">términos y condiciones</a>
+            </label>
+            <br>
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Derechos del autor Andres Arancibia © 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
