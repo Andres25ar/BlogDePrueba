@@ -4,13 +4,24 @@
 <head>
     <title>Mi Blog De Noticias</title>
     <link rel="stylesheet" href="blog.css"/>
+    <!--para los iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Contenido principal aquí -->
     <header>
-        <h1>Blog de noticias</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="">Inicio</a></li>
+                <li><a href="">Deporte</a></li>
+                <li><a href="">El clima</a></li>
+                <li><a href="">Actualidad</a></li>
+                <li><a href="">Tecnologia</a></li>
+                <li class="contact"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
+    <section class="container">
         <!-- noticia 1 -->
         <article>
             <h2 class="subtitles">River mató a un club</h2>
@@ -73,34 +84,51 @@
                 El video de este salteño causa furor en las redes y hasta el mismo Messi lo ha compartido.<br>
                 Miralo hasta el final, no te lo podes perder.
             </p>
-            <a target="_blank" href="https://www.lanacion.com.ar/clima/salta/">Saber más del clima aquí</a>
         </article>
     </section>
     <hr>
     <footer>
-        <h3>Desea contactarse con el editor?</h3>
-        <form action="https://formspree.io/f/meolqvga" method="post" onsubmit="return document.getElementById('terms').checked;">
+        <div class="footer-titlue">
+            <h3>Desea contactarse con el editor?</h3>
+        </div>
+        <form action="enviar.php" method="post"> <!--onsubmit="return document.getElementById('terms').checked;"-->
+            
+            <div class="input-container">
             <label for="name">Nombre y apellido:</label>
-            <input id="name" name="name" type="text" placeholder="Su nombre y apellido"/>
-            <br>
+            <input id="name" name="name" type="text" placeholder="Su nombre y apellido"/> 
+            <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-container">
             <label for="email">Correo electronico:</label>
             <input id="email" name="email" type="email" placeholder="suemail@correo.com"/>
-            <br>
+            <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-container">
             <label for="email_subject">Asunto:</label>
             <input id="email_subject" name="email_subject" type="text" placeholder="Asunto del email"/>
-            <br>
+            <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <div class="input-container">
             <label for="message">Su mensaje:</label>
             <textarea rows="8" cols="25" id="message" name="message" type="text" placeholder="Su comentario"></textarea>
-            <br>
-            <label>
-            <input type="checkbox" id="terms"/>
+            <i class="fa-solid fa-message" for="message"></i>
+            </div>
+
+            <!--label>
+            <input type="checkbox" id="terms" name="terms" required>
             Acepta los <a target="_blank" href="https://www.argentina.gob.ar/terminos-y-condiciones">términos y condiciones</a>
-            </label>
+            </label>-->
             <br>
             <button type="reset">Borrar</button>
             <button type="submit">Enviar</button>
         </form>
-        <p>Derechos del autor Andres Arancibia © 2025. Todos los derechos reservados.</p>
+        <div class="final-foot">
+            <p>Derechos del autor Andres Arancibia © 2025. Todos los derechos reservados.</p>
+                <img class="dropdown" src="escudoUNSa.jpg" width="70"/>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,18 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Cossette Texte", sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: #8ca192;
+}
+
+section {
+    margin-top: 100px; /* Aumenté el margen para dar más espacio a la barra */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todos los artículos horizontalmente */
+    width: 100%;
+    padding: 0 20px; /* Añade un poco de padding lateral */
+}
+
 .description{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:springgreen;
+    color:rgb(206, 220, 219);
+    text-align: justify;
 }
 
 .subtitles{
-    font-family: fantasy;
-    background: aquamarine, ;
+    font-family: "Cossette Texte", sans-serif;
+    background: rgb(13, 164, 159);;
 }
 
 .image{
-    /* border: 5px, turquoise, dotted; */
-    width: 45%;
+    width: 75%;
     border-style: outset;
     border-color:cornflowerblue;
     border-width: 4px;
     border-radius: 40px;
 }
+
+.image:hover{
+    transform: scale(1.09);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul {
+    list-style-type: none;
+    margin : 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: forestgreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra esté siempre encima */
+}
+
+li{
+    float: left;
+    border-right: 1px solid lightslategray;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: #111;
+}
+
+.active{
+    background-color: teal;
+}
+
+.contact{
+    float: right;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.dropdown:hover {
+    transform: scale(1.3);
+}
+
+.final-foot {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    transform: scale(1.1);
+}
+
+/*estilo para footer*/
+footer{
+    background: linear-gradient(180deg,#8ca192 0%,  #026702 100% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30%;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 2% 3%;
+    width: 25%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-container label {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-container > i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+    position: static;
+    transform: none;
+}
+
+button {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"] {
+    background-color: #ff6347;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #127098;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.input-container > input{
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    background-color: transparent;
+    border: 2px solid #026702;
+    border-radius: 35px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-container > textarea{
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    background-color: transparent;
+    border: 2px solid #026702;
+    border-radius: 35px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-container > input:hover{
+    border: 2px solid #d5861f;
+    transform: scale(1.09);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container > textarea:hover{
+    border: 2px solid #d5861f;
+    transform: scale(1.09);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::placeholder{
+    color:#cec5c5;
+    font-size: 16px;
+}
+
+.input-container > input:focus{
+    border-color: rgb(224, 224, 3);
+}
+
+.input-container > textarea:focus{
+    border-color: rgb(224, 224, 3);
+}
+
+footer {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Eliminé la clase .container que estaba causando problemas */
+
+/* Estilos actualizados para los artículos */
+section article{
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 800px; /* Controla el ancho máximo de los artículos */
+    background-color: #588261;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center; /* Centra el contenido dentro del artículo */
+}
+
+section article h2, section article h3, section article p{
+    margin: 1rem;
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    section {
+        margin-top: 80px;
+        padding: 0 10px;
+    }
+    
+    section article {
+        max-width: 95%;
+    }
+    
+    form {
+        width: 90%;
+    }
+}s
