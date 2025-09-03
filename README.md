@@ -4,7 +4,7 @@ Este repositorio, que está bastante desorganizado, fue utilizado meramente como
 
 La función principal de este proyecto era crear un blog noticiero de prueba. También incluí un formulario de contacto para enviar un email usando la librería **PHPMailer**.
 
-Lamento que la organización del código y el diseño no sean los mejores. ¡Aún estoy aprendiendo!
+Lamento que la organización del código y el diseño no sean los mejores.
 
 ---
 ## Tecnologías Utilizadas
